@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "plugins": [],
+    "checkJs": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "incremental": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/*/index", "./src/*"],
+      "@assets/*": ["./assets/*/index", "./assets/*"]
+    }
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!((jest-)?react-native|react-native-elements|@react-native(-community)?)/)"
+  ],
+  "coveragePathIgnorePatterns": ["/node_modules/", "/jest"]
+}
