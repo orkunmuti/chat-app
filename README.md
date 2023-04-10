@@ -32,10 +32,10 @@ npm install`
 
 2.  Configure the app with your Firebase credentials:
 
-- Create a new file `config.ts` in the `src/config` directory.
+- Create a new file `firebase.ts` in the `src/config` directory.
 - Add your Firebase configuration object to the file:
 
-`// src/config/config.ts
+``` src/config/config.ts
 export const firebaseConfig = {
   apiKey: "your-api-key",
   authDomain: "your-auth-domain",
@@ -43,7 +43,7 @@ export const firebaseConfig = {
   storageBucket: "your-storage-bucket",
   messagingSenderId: "your-messaging-sender-id",
   appId: "your-app-id",
-}`
+}
 
 1.  Run the application:
 
